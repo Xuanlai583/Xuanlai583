@@ -17,7 +17,10 @@ int main() {
     for(int i = 1; i <= n ; i++) {
         a[i]=i;
     }
-    do {
+    if(n ==0 ){
+        fout << endl;
+    }else{
+        do {
         //in cau hinh hien tai 
         for(int i = 1 ; i <=n; i++) {
             fout << a[i] << " ";
@@ -40,6 +43,7 @@ int main() {
             }
         }
     }while(i > 0);
+}    
     fout.close();
     return 0;
 }
